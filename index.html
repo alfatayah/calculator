@@ -13,14 +13,22 @@
     <label>Masukkan angka 2</label>
     <input type="text" id="input2" placeholder="0">
     <button onclick="tambah()" id="tambah" >+</button>
+    <button onclick="kurang()" id="kurang" >-</button>
 </body>
 
 <script>
     function tambah(){
         var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
         var hasil = parseInt(input1) + parseInt(input2);
         alert(hasil);
     }
 
+    function kurang(){
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var hasil = parseInt(input1) - parseInt(input2);
+        alert(hasil);
+    }
 </script>
 </html>
