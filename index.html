@@ -15,6 +15,7 @@
     <button onclick="tambah()" id="tambah" >+</button>
     <button onclick="kurang()" id="kurang" >-</button>
     <button onclick="pembagian()" id="pembagian" >/</button>
+    <button onclick="perkalian()" id="perkalian" >/</button>
 </body>
 
 <script>
@@ -31,10 +32,10 @@
         var hasil = parseInt(input1) - parseInt(input2);
         alert(hasil);
     }
-    function pembagian(){
+    function perkalian(){
         var input1 = document.getElementById("input1").value;
         var input2 = document.getElementById("input2").value;
-        var hasil = parseInt(input1) / parseInt(input2);
+        var hasil = parseInt(input1) * parseInt(input2);
         alert(hasil);
     }
 </script>
